@@ -1,0 +1,8 @@
+server:
+  port: 8088
+
+Person:
+  name: Leo
+  age: 26
+  job: testing engineer
+  habit: [coding, learning, play games, skateBoarding]

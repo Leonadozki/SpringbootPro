@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "com.leoTest.bean.Person",
+      "sourceType": "com.leoTest.bean.Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.leoTest.bean.Person"
+    },
+    {
+      "name": "person.habit",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.leoTest.bean.Person"
+    },
+    {
+      "name": "person.job",
+      "type": "java.lang.String",
+      "sourceType": "com.leoTest.bean.Person"
+    },
+    {
+      "name": "person.name",
+      "type": "java.lang.String",
+      "sourceType": "com.leoTest.bean.Person"
+    }
+  ],
+  "hints": []
+}

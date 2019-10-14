@@ -1,16 +1,22 @@
 package com.leoTest.controller;
 
 
-import org.springframework.stereotype.Controller;
+import com.leoTest.bean.Person;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+import javax.annotation.Resource;
+
+//@ResponseBody     方法返回内容作为body返回
+//@Controller
+@RestController     // 集合了@ResponseBody和@Controller的写法
 public class ReqController {
 
-    @ResponseBody
+    @Resource
+    private Person person;
+
     @RequestMapping("/hello")
     public String requestTest(){
-        return "Congratulations ! This is ur response content!";
+        return "<h1>Congratulations ! This is ur response content!</h1>\n"+person;
     }
 }
