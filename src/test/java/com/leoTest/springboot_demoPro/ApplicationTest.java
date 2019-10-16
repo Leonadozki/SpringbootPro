@@ -2,6 +2,8 @@ package com.leoTest.springboot_demoPro;
 import com.leoTest.bean.Person;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -14,12 +16,14 @@ import javax.annotation.Resource;
 @SpringBootTest
 public class ApplicationTest {
 
+    private Logger logger = LoggerFactory.getLogger(ApplicationTest.class);
+
     @Resource
     private Person person;
 
     @Test
     public void contextLoads() {
-        System.out.println(person);
+        logger.info("输出内容： "+person);
     }
 
 }
